@@ -49,4 +49,10 @@ describe('Javabuzz', function() {
       expect(javabuzz.says(14)).toBe('14');
     });
   });
+
+  describe('prints javabuzz sequence', function() {
+    it('for a range of 1 to 15', function() {
+      expect(javabuzz.play(15)).toBe('1, 2, Java, 4, Buzz, Java, 7, 8, Java, Buzz, 11, Java, 13, 14, JavaBuzz');
+    });
+  });
 });

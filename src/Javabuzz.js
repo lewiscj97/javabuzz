@@ -1,4 +1,12 @@
 class Javabuzz {
+  play(range) {
+    let arr = [];
+    for (let i = 1; i <= range; i++) {
+      arr.push(this.says(i));
+    }
+    return arr.join(', ');
+  }
+
   says(number) {
     if (this.isDivisibleByFifteen(number)) {
       return 'JavaBuzz';
