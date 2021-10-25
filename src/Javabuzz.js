@@ -35,3 +35,10 @@ class Javabuzz {
     return (number % divisor === 0);
   }
 }
+
+// different function declarations
+// let aFunction = function() {
+//   console.log('Bonjour');
+// }
+
+// let aFunction = () => console.log('Bonjour');
