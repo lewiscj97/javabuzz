@@ -1,13 +1,17 @@
 class Javabuzz {
   isDivisibleByThree(number) {
-    return (number % 3 === 0);
+    return this._isDivisibleBy(number, 3);
   }
 
   isDivisibleByFive(number) {
-    return (number % 5 === 0);
+    return this._isDivisibleBy(number, 5);
   }
 
-  isDivisibleByThreeAndFive(number) {
-    return (this.isDivisibleByThree(number) && this.isDivisibleByFive(number));
+  isDivisibleByFifteen(number) {
+    return this._isDivisibleBy(number, 15);
+  }
+
+  _isDivisibleBy(number, divisor) {
+    return (number % divisor === 0);
   }
 }

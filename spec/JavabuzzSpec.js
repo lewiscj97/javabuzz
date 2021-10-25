@@ -14,7 +14,7 @@ describe('Javabuzz', function() {
     });
 
     it('divisible by 3 and 5', function() {
-      expect(javabuzz.isDivisibleByThreeAndFive(15)).toBe(true);
+      expect(javabuzz.isDivisibleByFifteen(15)).toBe(true);
     })
   });
 
@@ -28,7 +28,7 @@ describe('Javabuzz', function() {
     });
 
     it('divisible by 3 and 5', function() {
-      expect(javabuzz.isDivisibleByThreeAndFive(7)).toBe(false);
+      expect(javabuzz.isDivisibleByFifteen(7)).toBe(false);
     })
   });
 });
